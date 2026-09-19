@@ -1,0 +1,254 @@
+/* ---------- base ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    color: #1f2937;
+}
+
+/* ---------- header + hero (dark) ---------- */
+.dark-section {
+    background-color: #322411;
+    padding: 0 150px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #90bd59;
+}
+
+.header-links {
+    display: flex;
+    gap: 24px;
+}
+
+.header-links a {
+    font-size: 18px;
+    color: #90bd59;
+    text-decoration: none;
+}
+
+.header-links a:hover {
+    color: #f9faf8;
+    text-decoration: underline;
+}
+
+.hero {
+    display: flex;
+    align-items: flex-start;
+    gap: 48px;
+    padding: 100px 0 0px;
+}
+
+.hero-text {
+    flex: 1;
+    transform: translateY(30px);
+    transform: translateX(-60px);
+}
+
+.hero-text h1 {
+    font-size: 75px;
+    font-weight: 1000;
+    line-height: 1.1;
+    color: #90bd59;
+}
+
+.hero-text p {
+    font-size: 18px;
+    color: #e5e7eb;
+    margin: 8px 0 16px;
+}
+
+.hero-image {
+    flex: 1;
+    transform: translateY(-90px);
+}
+
+.hero-image {
+    flex: 1;
+    width: 350px;
+    height: 550px;
+    object-fit: fill;
+}
+
+/* ---------- buttons ---------- */
+.button {
+    display: inline-block;
+    background-color: #b3dd3f;
+    color: #000000;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 8px 32px;
+    border-radius: 8px;
+}
+
+.button:hover {
+    background-color: #477720;
+}
+
+.button-outline {
+    border: 2px solid #f9faf8;
+}
+
+.button-outline:hover {
+    background-color: #f9faf8;
+    color: #3882f6;
+}
+
+/* ---------- information section ---------- */
+.info {
+    background-color: #ffffff;
+    padding: 50px 200px 100px;
+    text-align: center;
+}
+
+.info-heading {
+    font-size: 36px;
+    font-weight: 900;
+    color: #1f2937;
+    margin-bottom: 40px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 40px 24px;
+    align-items: start;
+    column-gap: 10px;
+    row-gap: 40px;
+}
+
+.card {
+    width: 100%;
+    max-width: 170px;
+    justify-self: center;
+    column-gap: 4px;
+    row-gap: 40px;
+}
+
+/* First row: 1 card */
+.card:nth-child(1) {
+    grid-column: 1 / -1;
+}
+
+/* Second row: 4 cards */
+.card:nth-child(n + 2):nth-child(-n + 5) {
+    grid-column: span 3;
+    column-gap: 0;
+}
+
+/* Third row: 6 cards */
+.card:nth-child(n + 6):nth-child(-n + 11) {
+    grid-column: span 2;
+}
+
+.card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 4px solid #90bd59;
+    border-radius: 16px;
+}
+
+.card p {
+    margin-top: 8px;
+    font-size: 16px;
+}
+
+.card:hover img {
+    border-color: #1f2937;
+}
+
+.card:hover p {
+    color: #1f2937;
+}
+
+.menu-note {
+    margin-top: 48px;
+    font-size: 18px;
+    color: #3d4653;
+}
+
+.menu-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    list-style: none;
+    margin-top: 12px;
+}
+
+.menu-list a {
+    font-size: 18px;
+    color: #86b136;
+    text-decoration: none;
+}
+
+.menu-list a:hover {
+    text-decoration: underline;
+}
+
+/* ---------- quote section ---------- */
+.quote-section {
+    background-color: #e5e7eb;
+    padding: 100px 300px;
+}
+
+.quote {
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+    color: #1f2937;
+}
+
+.quote-author {
+    font-weight: 700;
+    text-align: right;
+    margin-top: 16px;
+}
+
+/* ---------- call to action ---------- */
+.cta-section {
+    padding: 100px 200px;
+    background-color: #c9c8c7;
+}
+
+.cta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 48px;
+    background-color: #322411;
+    border-radius: 8px;
+    padding: 50px 100px;
+}
+
+.cta-text h3 {
+    font-size: 24px;
+    color: #90bd59;
+}
+
+.cta-text p {
+    font-size: 16px;
+    color: #e5e7eb;
+}
+
+/* ---------- footer ---------- */
+.footer {
+    background-color: #1f2937;
+    color: #e5e7eb;
+    text-align: center;
+    padding: 30px 0;
+}
